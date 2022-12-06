@@ -6,7 +6,7 @@ app.use(cors())
 
 const removeSubChildren = (obj)=>{
     const resChildren = {}
-    Object.keys(obj.children).forEach((key)=>{
+    Object.keys(obj.children||{}).forEach((key)=>{
         resChildren[key]={type: obj.children[key].type}
     })
     return {type: obj.type, children: resChildren}
