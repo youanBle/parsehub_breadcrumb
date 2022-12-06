@@ -11,14 +11,10 @@ function FilesPanel(props) {
       {Object.keys(childrenFile).map((key) => {
         if (childrenFile[key].type === "dir") {
           return (
-            <div className="folder">
-              <FolderLogo
-                className="icon"
-                style={{ width: 16, height: 16 }}
-              />
+            <div className="folder" key={key}>
+              <FolderLogo className="icon" style={{ width: 16, height: 16 }} />
               <button
                 className="textBtn"
-                key={key}
                 onClick={() => {
                   handleFileChange(key);
                 }}

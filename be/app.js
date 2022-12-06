@@ -7,7 +7,6 @@ const app = express();
 app.use(cors())
 
 const removeSubChildren = (obj)=>{
-    console.log(obj)
     const resChildren = {}
     Object.keys(obj.children).forEach((key)=>{
         resChildren[key]={type: obj.children[key].type}
