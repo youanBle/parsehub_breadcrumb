@@ -4,14 +4,18 @@
 
 #### FE
 
-cd breadcrumb
+cd fe
+
 npm i
+
 npm start
 
 #### BE
 
-cd breadcrumb_be
+cd be
+
 npm i
+
 node app.js
 
-path can be modified at breadcrumb_be/const.js
+path can be edited at be/const.js
