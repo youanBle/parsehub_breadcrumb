@@ -1,8 +1,6 @@
 const express = require('express');
 const cors = require('cors')
-const fs = require("fs");
 const root = require("./const")
-var rp = require('request-promise');
 const app = express();
 app.use(cors())
 
