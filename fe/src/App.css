@@ -7,3 +7,25 @@
 .textBtn:hover {
   cursor: pointer;
 }
+.loadingMask{
+  width: 100%;
+  height: 400px;
+  position: fixed;
+}
+.loadingLogo {
+  position: fixed;
+  top: 10%;
+  left:50%;
+  opacity: 0.2;
+  animation: rotate linear 2s infinite;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
