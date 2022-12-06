@@ -1,0 +1,9 @@
+.textBtn {           
+  background-color: Transparent; 
+  border-style: none;    
+  outline: none;    
+  font-size: 16px; 
+}
+.textBtn:hover {
+  cursor: pointer;
+}
